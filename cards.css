@@ -1,0 +1,137 @@
+.cards {
+    background: #eeeeee;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #f9fdff, #d7ecfa);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #ffffff, #d8efff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.cards h1 {
+    font-weight: normal;
+    color: #1a2c75;
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+}
+
+.cards p {
+    color: #a1a1a1;
+    text-align: center;
+}
+
+.card {
+    border-radius: 15px;
+    width: 75%;
+    height: 27rem;
+    margin-top: 2rem;
+    background: #fff;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.card .card-inside{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 999;
+    top:20%;
+    left:-5%;
+    border-radius: 7px ;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card-inside h3{
+    color: rgb(139, 139, 139);
+    font-weight: normal;
+    font-size: .9rem;
+}
+.card-inside p i{
+    color: rgb(0, 255, 85);
+    margin-right: .7rem;
+    font-size: .7rem;
+}
+.card-inside .fa-heart{
+    color: rgb(250, 114, 114);
+    margin-top: .3rem;
+    font-size: .7rem;
+}
+.fa-map-marker-alt{
+    color: rgb(0, 255, 85);
+    margin-right: .3rem;
+    font-size: .7rem;
+}
+.card-inside hr{
+    width: 3rem;
+    color: #d8efff;
+    margin-top: .3rem;
+}
+
+.card img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+
+.card h2 {
+    margin-top: .5rem;
+    color: rgb(29, 58, 138);
+    font-weight: normal;
+    margin-left: 1rem;
+}
+
+.card span {
+    margin-left: 1rem;
+    color: rgb(190, 190, 190);
+}
+
+@media screen and (min-width:1024px) {
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards h1 {
+        margin-top: 5rem;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .cards-wrapper {
+        width: 80%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 22%;
+        height: 23rem;
+
+    }
+
+    .card img {
+        height: 70%;
+    }
+}

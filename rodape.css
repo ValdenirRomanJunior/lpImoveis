@@ -1,0 +1,178 @@
+.rodape-container {
+    background-color: #282828;
+    padding-top: 1rem;
+}
+
+.rodape-container h1 {
+    color: #fff;
+    text-align: center;
+}
+
+
+.img-corretor-wrapper {
+    width: 12rem;
+    height: 12rem;
+    margin: auto;
+}
+
+.img-corretor-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.agente {
+    margin-top: 1rem;
+}
+
+.agente p {
+    color: #fff;
+    text-align: center;
+
+}
+
+.rodape .privacidade {
+    color: #fff;
+    font-size: .6em;
+    background-color: black;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.rodape .privacidade a {
+    color: rgb(0, 255, 85);
+}
+
+.botao-wrapper-agente {
+    text-align: center;
+    margin-top: .5rem;
+
+}
+
+.botao-agente {
+    text-decoration: none;
+    background-color: rgb(0, 255, 85);
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    border-radius: 5px;
+
+
+}
+
+.botao-agente i {
+    color: #fff;
+    font-size: 1rem;
+    margin-right: .3rem;
+}
+
+.outros-empreendimentos-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.outros-empreendimentos-container h2 {
+    color: rgb(116, 116, 116);
+    margin-top: 3rem;
+    text-align: left;
+    
+    margin-left: 2rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.outro-empreendimento {
+    width: 80%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.img-wrapper-empreendimentos {
+    width: 30%;
+    height: 100%;
+}
+
+.img-wrapper-empreendimentos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.textos-wrapper-empreendimentos {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    justify-content: left;
+    margin-left: 1rem;
+}
+
+.textos-wrapper-empreendimentos p {
+    color: #fff;
+}
+
+.textos-wrapper-empreendimentos span {
+    color: rgb(139, 139, 139);
+    font-size: .8rem;
+}
+
+.textos-wrapper-empreendimentos span i {
+    color: rgb(0, 255, 85);
+    font-size: .7rem;
+    margin-right: .3rem;
+}
+.img-logo-wrapper-rodape{
+    text-align: center;
+}
+
+@media screen and (min-width:1024px) {
+    .conteudo-wrapper-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .conteudo-wrapper-container h1{
+        width: 25%;
+    }
+
+   .img-logo-wrapper-rodape {
+        width: 25%;
+    }
+
+    .outros-empreendimentos-container {
+        align-items: flex-start;
+        justify-content: center;
+        width: 25%;
+
+    }
+
+    .img-wrapper-empreendimentos {
+       
+        width: 25%;
+    }
+
+    .outros-empreendimentos-container h2 {
+   
+      
+        color: rgb(116, 116, 116);
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+
+}

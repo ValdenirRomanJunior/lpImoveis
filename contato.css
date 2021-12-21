@@ -1,0 +1,167 @@
+.contato-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+    margin-top: 3rem;
+  
+}
+
+.container-textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    margin-top: 4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background: rgb(58, 58, 58);
+    padding: 2rem 1rem 1rem 1rem;
+
+}
+
+.form::after {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    height: 30px;
+    width: 30px;
+    border-top: 4px solid rgb(0, 255, 85);
+    border-left: 4px solid rgb(0, 255, 85);
+    transition: 1s;
+}
+
+.form:hover::after {
+    height: 100%;
+    widows: 1000%;
+}
+
+.form::before {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    height: 30px;
+    width: 30px;
+    border-bottom: 4px solid rgb(0, 255, 85);
+    border-right: 4px solid rgb(0, 255, 85);
+    transition: 1s;
+}
+
+.form:hover::before {
+    height: 100%;
+    widows: 1000%;
+}
+
+
+.contato-container h1 {
+    margin-top: 1rem;
+    font-size: 2rem;
+
+
+}
+
+.ponto {
+    margin-top: 2rem;
+    width: .5rem;
+    height: .5rem;
+    float: right;
+    background-color: rgb(0, 255, 85);
+
+}
+
+.contato-container span {
+    color: gray;
+}
+
+.form button {
+    background-color: rgb(0, 255, 85);
+    font-size: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    margin-top: .5rem;
+}
+
+.form input {
+    background: rgb(58, 58, 58);
+    border: none;
+    border-bottom: 2px solid rgb(66, 66, 66);
+    padding-top: 1rem;
+}
+
+.form label {
+
+    color: rgb(146, 146, 146);
+}
+
+.bola-form {
+    background: rgb(0, 255, 85);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.bola-form i {
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+@media screen and (min-width:1024px) {
+    .contato-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .container-textos {
+        align-items: flex-start;
+        height: 20rem;
+        justify-content: space-around;
+    }
+
+    .container-textos::before {
+        content: "";
+        border-left: 4px solid rgb(0, 255, 85);
+        width: 30px;
+        height: 80%;
+        position: absolute;
+        top: 3rem;
+        left: 10%;
+
+    }
+
+    .contato-container h1 {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+
+    }
+
+    .form {
+        width: 25%;
+        padding: 4rem 1rem 1rem 1rem;
+    }
+    .ponto{
+        margin-top: 2.5rem;
+    }
+
+}
